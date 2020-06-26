@@ -1,22 +1,20 @@
 <template>
-  <div class="container">
-    <div class="rows">
-      <div style="max-width: 500px">
-        <app-logo />
-        <app-logo white />
-      </div>
-      <app-logo-icon />
-      <app-logo-icon white />
-      <app-button />
-      <app-button outlined />
-      <app-button text />
-      <app-button full-width />
-      <app-button full-width outlined />
-      <app-button full-width text />
-      <app-button full-width text>Custom text</app-button>
-      <app-section-title />
-      <app-section-title>Custom title</app-section-title>
+  <div class="rows">
+    <div style="max-width: 500px">
+      <app-logo />
+      <app-logo white />
     </div>
+    <app-logo-icon />
+    <app-logo-icon white />
+    <app-button />
+    <app-button outlined />
+    <app-button text />
+    <app-button full-width />
+    <app-button full-width outlined />
+    <app-button full-width text />
+    <app-button full-width text>Custom text</app-button>
+    <app-section-title />
+    <app-section-title>Custom title</app-section-title>
   </div>
 </template>
 
