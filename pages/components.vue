@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <div class="rows">
-      <app-logo />
-      <app-logo white />
+      <div style="max-width: 500px">
+        <app-logo />
+        <app-logo white />
+      </div>
       <app-logo-icon />
       <app-logo-icon white />
       <app-button />
