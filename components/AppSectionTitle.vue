@@ -1,6 +1,6 @@
 <template>
   <h2>
-    This is a section title
+    <slot>This is a section title</slot>
   </h2>
 </template>
 

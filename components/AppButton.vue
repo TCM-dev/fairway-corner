@@ -1,6 +1,6 @@
 <template>
   <button :class="classObject">
-    Button
+    <slot>Button</slot>
   </button>
 </template>
 
