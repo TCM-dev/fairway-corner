@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 button {
-  @apply font-semibold;
+  @apply font-semibold border-primary;
   font-size: 18px;
   height: 50px;
   min-width: 233px;
@@ -38,6 +38,7 @@ export default {
         "bg-primary": !this.outlined && !this.text,
         "text-white": !this.outlined && !this.text,
         "text-primary": this.outlined || this.text,
+        border: this.outlined,
         "w-full": this.fullWidth
       };
     }

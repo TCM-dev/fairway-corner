@@ -7,6 +7,7 @@
       <app-button full-width />
       <app-button full-width outlined />
       <app-button full-width text />
+      <app-section-title />
     </div>
   </div>
 </template>
@@ -24,9 +25,11 @@
 
 <script>
 import AppButton from "~/components/AppButton";
+import AppSectionTitle from "~/components/AppSectionTitle";
 export default {
   components: {
-    AppButton
+    AppButton,
+    AppSectionTitle
   }
 };
 </script>
