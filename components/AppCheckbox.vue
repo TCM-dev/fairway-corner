@@ -17,9 +17,6 @@
 
 <script>
 export default {
-  data: {
-    isChecked: false
-  },
   props: {
     name: {
       type: String,
