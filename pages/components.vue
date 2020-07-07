@@ -20,6 +20,7 @@
     <app-button full-width text>Custom text</app-button>
     <app-section-title />
     <app-section-title>Custom title</app-section-title>
+    <app-checkbox checkbox1></app-checkbox>
   </div>
 </template>
 
