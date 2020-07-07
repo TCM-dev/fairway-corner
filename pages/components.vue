@@ -5,8 +5,8 @@
       <app-logo white />
     </div>
     <div style="max-width: 200px">
-      <app-icon-logo />
-      <app-icon-logo white />
+      <app-logo-icon />
+      <app-logo-icon white />
     </div>
     <div>
       <app-social-media />
