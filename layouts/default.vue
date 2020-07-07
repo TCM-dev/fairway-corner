@@ -1,6 +1,10 @@
 <template>
   <div>
+    <app-layout-header />
     <Nuxt />
+    <footer>
+      Salut, je suis un footer, trop bien.
+    </footer>
   </div>
 </template>
 
