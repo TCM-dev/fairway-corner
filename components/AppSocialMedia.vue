@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-row">
-    <div :class="style">
+    <a href="#" :class="style">
       <img src="~assets/svg/social-media/facebook.svg" />
-    </div>
-    <div :class="style" class="mx-4">
+    </a>
+    <a href="#" :class="style" class="mx-4">
       <img src="~assets/svg/social-media/twitter.svg" />
-    </div>
-    <div :class="style">
+    </a>
+    <a href="#" :class="style">
       <img src="~assets/svg/social-media/linkedin.svg" />
-    </div>
+    </a>
   </div>
 </template>
 
