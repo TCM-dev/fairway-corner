@@ -18,6 +18,7 @@
     "sass-loader": "^8.0.2"
   },
   "devDependencies": {
+    "@nuxtjs/svg": "^0.1.11",
     "@nuxtjs/tailwindcss": "^2.0.0",
     "stylelint-config-recommended": "^3.0.0"
   }
