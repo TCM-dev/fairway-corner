@@ -61,6 +61,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "@nuxtjs/svg",
     [
       "nuxt-i18n",
       {
@@ -69,8 +70,8 @@ export default {
         vueI18n: {
           fallbackLocale: "en",
           messages: {
-            en: require('./lang/en.json'),
-            fr: require('./lang/fr.json')
+            en: require("./lang/en.json"),
+            fr: require("./lang/fr.json")
           }
         }
       }

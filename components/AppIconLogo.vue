@@ -1,10 +1,10 @@
 <template>
   <div>
     <div v-if="!white">
-      <img src="~assets/svg/logo-color.svg" />
+      <img src="~assets/svg/logo-icon-color.svg" />
     </div>
     <div v-if="white">
-      <img src="~assets/svg/logo-white.svg" />
+      <img src="~assets/svg/logo-icon-white.svg" />
     </div>
   </div>
 </template>

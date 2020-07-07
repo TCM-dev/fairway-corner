@@ -4,8 +4,13 @@
       <app-logo />
       <app-logo white />
     </div>
-    <app-logo-icon />
-    <app-logo-icon white />
+    <div style="max-width: 200px">
+      <app-icon-logo />
+      <app-icon-logo white />
+    </div>
+    <div>
+      <app-social-media />
+    </div>
     <app-button />
     <app-button outlined />
     <app-button text />
