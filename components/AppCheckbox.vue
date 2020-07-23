@@ -1,12 +1,10 @@
 <template>
   <div>
     <div class="relative">
-      <input
-        type="checkbox"
-        :name="name"
-      />
+      <input type="checkbox" class="h-5 w-5 opacity-0" :name="name" v-model="checked" />
       <div
-        class="checkbox-custom block h-5 w-5 bg-lightWhite border-solid border cursor-pointer rounded border-lightGrey"
+        class="absolute top-0 pointer-events-none checkbox-custom block h-5 w-5 bg-lightWhite border-solid border cursor-pointer rounded border-lightGrey"
+        :class="checked ? 'checked bg-primaryGreen border-none' : ''"
       ></div>
     </div>
     <label :for="name">
@@ -17,6 +15,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      checked: false
+    };
+  },
   props: {
     name: {
       type: String,
@@ -29,3 +32,15 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.checked::after {
+  content: "";
+  display: block;
+  height: 1.25rem;
+  widows: 1.25rem;
+  background-image: url("../assets/svg/icons/checkmark-outline.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>
