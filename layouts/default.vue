@@ -1,9 +1,9 @@
 <template>
   <div>
     <app-layout-header />
-    <div class="custom-container">
-      <Nuxt />
-    </div>
+    <Nuxt />
+    <!-- <div>
+    </div> -->
     <footer>
       Salut, je suis un footer, trop bien.
     </footer>

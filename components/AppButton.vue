@@ -17,6 +17,9 @@ button {
   border-radius: 40px;
   box-shadow: -3px -3px 6px #fff,
     3px 3px 6px rgba($color: #000000, $alpha: 0.15);
+  &.no-neo {
+    box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.15) !important;
+  }
 }
 </style>
 
@@ -25,27 +28,28 @@ export default {
   props: {
     fullWidth: {
       type: Boolean,
-      default: false
+      default: false,
     },
     outlined: {
       type: Boolean,
-      default: false
+      default: false,
     },
     text: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
-    classObject: function() {
+    classObject: function () {
       return {
         "bg-primary": !this.outlined && !this.text,
+        "bg-white": this.text || this.outlined,
         "text-white": !this.outlined && !this.text,
         "text-primary": this.outlined || this.text,
         border: this.outlined,
-        "w-full": this.fullWidth
+        "w-full": this.fullWidth,
       };
-    }
-  }
+    },
+  },
 };
 </script>

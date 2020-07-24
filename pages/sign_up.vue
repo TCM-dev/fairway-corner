@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="custom-container flex flex-col items-center">
     <app-section-title class="m-auto">SIGN UP</app-section-title>
     <div class="custom-margin flex flex-col xl:flex-row">
       <section class="flex flex-col items-center custom-width">
@@ -47,7 +47,6 @@
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 .custom-margin {
