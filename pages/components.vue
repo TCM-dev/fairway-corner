@@ -20,7 +20,8 @@
     <app-button full-width text>Custom text</app-button>
     <app-section-title />
     <app-section-title>Custom title</app-section-title>
-    <app-checkbox checkbox1></app-checkbox>
+    <app-checkbox checkbox1>Je suis une checkbox</app-checkbox>
+    <app-input-text placeholder="Entrer votre mot de passe" />
   </div>
 </template>
 
