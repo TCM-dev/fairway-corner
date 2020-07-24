@@ -1,7 +1,7 @@
 <template>
   <div class="custom-container flex flex-col items-center">
     <app-section-title class="m-auto title">COMPANY</app-section-title>
-    <app-section-title class="mt-8 text-left self-start">
+    <app-section-title class="mt-16 text-left self-start">
       OUR MISSIONS
     </app-section-title>
     <div class="xl:flex mt-16">
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <app-section-title class="mt-8 text-left self-start">
+    <app-section-title class="mt-16 text-left self-start">
       OUR VALUES
     </app-section-title>
     <section class="list-of-card">
@@ -95,7 +95,7 @@
         </p>
       </app-soft-card>
     </section>
-    <app-section-title class="mt-8 text-left self-start">
+    <app-section-title class="mt-16 text-left self-start">
       OUR TEAM
     </app-section-title>
     <section class="xl:flex">
