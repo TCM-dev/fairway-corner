@@ -13,7 +13,7 @@
         <app-input-text class="my-2 md:w-1/2 md:mx-2" placeholder="E-mail" />
         <app-input-text class="my-2 md:w-1/2 md:mx-2" placeholder="Entreprise" />
       </div>
-      <div class="p-2">
+      <div class="md:p-2">
         <textarea
           class="w-full py-2 px-4 font-medium rounded-md border border-lightGrey custom-box-shadow"
           cols="30"

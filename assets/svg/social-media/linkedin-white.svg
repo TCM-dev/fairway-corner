@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41">
+  <g id="Groupe_215" data-name="Groupe 215" transform="translate(-0.185 0.467)">
+    <ellipse id="Ellipse_59" data-name="Ellipse 59" cx="20" cy="20.5" rx="20" ry="20.5" transform="translate(0.185 -0.467)" fill="#fff"/>
+    <g id="linkedin" transform="translate(10.483 11.182)">
+      <g id="Groupe_210" data-name="Groupe 210" transform="translate(0 5.765)">
+        <g id="Groupe_209" data-name="Groupe 209">
+          <rect id="Rectangle_167" data-name="Rectangle 167" width="4.262" height="13.103" fill="#25b196"/>
+        </g>
+      </g>
+      <g id="Groupe_212" data-name="Groupe 212" transform="translate(5.956 5.765)">
+        <g id="Groupe_211" data-name="Groupe 211">
+          <path id="Tracé_140" data-name="Tracé 140" d="M169.916,160.154c-.045-.014-.088-.03-.136-.043s-.114-.024-.173-.033a3.821,3.821,0,0,0-.765-.077,5.922,5.922,0,0,0-4.58,2.505V160H160v13.1h4.262v-7.147s3.221-4.486,4.58-1.191V173.1H173.1v-8.842A4.25,4.25,0,0,0,169.916,160.154Z" transform="translate(-160 -160)" fill="#25b196"/>
+        </g>
+      </g>
+      <g id="Groupe_214" data-name="Groupe 214" transform="translate(0.19 0)">
+        <g id="Groupe_213" data-name="Groupe 213" transform="translate(0 0)">
+          <circle id="Ellipse_58" data-name="Ellipse 58" cx="2.097" cy="2.097" r="2.097" fill="#25b196"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

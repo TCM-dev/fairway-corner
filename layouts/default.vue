@@ -4,9 +4,7 @@
     <Nuxt />
     <!-- <div>
     </div> -->
-    <footer>
-      Salut, je suis un footer, trop bien.
-    </footer>
+    <app-footer />
   </div>
 </template>
 
