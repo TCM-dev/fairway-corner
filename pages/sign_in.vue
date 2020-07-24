@@ -37,7 +37,7 @@
         <!-- </div> -->
       </section>
     </div>
-    <p class="second-custom-width">
+    <p class="second-custom-width text-center">
       * En vous connectant, vous acceptez nos Conditions d’utilisation et de
       recevoir des e-mails et actualités FairWay Corner et vous reconnaissez
       avoir lu notre Politique de confidentialité. Vous acceptez également

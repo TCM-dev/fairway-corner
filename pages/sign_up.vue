@@ -42,9 +42,9 @@
           Google
         </button>
         <!-- </div> -->
-        <p class="second-custom-width">
+        <p class="second-custom-width text-sm">
           *En choisissant la connexion avec les réseaux sociaux vous accepter
-          les conditions d'utilisations
+          <nuxt-link to="/" class="underline">les conditions d'utilisations</nuxt-link>
         </p>
       </section>
     </div>
