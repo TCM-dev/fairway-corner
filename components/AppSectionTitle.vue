@@ -7,8 +7,12 @@
 <style lang="scss" scoped>
 h2 {
   @apply font-bold;
-  font-size: 36px;
+  font-size: 20px;
   position: relative;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
 
   &::after {
     content: "";

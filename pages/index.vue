@@ -105,12 +105,145 @@
         </div>
       </div>
     </section>
+    <div class="custom-container">
+      <app-section-title class="custom-margin-top">
+        NOS OFFRES
+      </app-section-title>
+      <section class="xl:flex">
+        <div class="left-line font-16 mt-10 xl:flex-1 custom-mr">
+          <span class="font-bold">DIGITAL LEARNING SERVICES</span>
+          <ul>
+            <li>Design, develop and deliver immersive e-learning modules</li>
+          </ul>
+        </div>
+        <div class="left-line font-16 mt-10 xl:flex-1 custom-mr">
+          <span class="font-bold">DIGITAL PRODUCTS</span>
+          <ul>
+            <li>
+              Online platform “Fairway Corner”
+            </li>
+            <li>
+              Tailor-made e-learning modules and learning programs, available on
+              the platform 24/7
+            </li>
+          </ul>
+        </div>
+        <div class="left-line font-16 mt-10 xl:flex-1">
+          <span class="font-bold">
+            RETAILER TRAINING STRATEGY SERVICES ALIGNED WITH
+          </span>
+          <ul>
+            <li>
+              Category reviews, in-store marketing campaigns, or merchandising
+              programs
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="xl:flex items-center">
+        <div class="flex items-center custom-mr">
+          <img class="w-24 xl:w-auto" src="~/assets/img/home/1.png" />
+          <div class="flex-1">
+            <span class="font-16 font-bold mb-4 uppercase block"
+              >Modules généraux</span
+            >
+            <p>
+              les apprenants, afin d’attiser leur curiosité et de maximiser les
+              taux de rétention de l’information via des teaser vidéo, des
+              activités de type rapid learning
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center custom-mr">
+          <img class="w-24 xl:w-auto" src="~/assets/img/home/2.png" />
+          <div class="flex-1">
+            <span class="font-16 font-bold mb-4 uppercase block"
+              >Modules spécifiques</span
+            >
+            <p>
+              efficacement les apprenants : en visant des compétences et
+              connaissances clés nécessaires à leur métier et en formulant des
+              objectifs pédagogiques cohérents et atteignables et mesurables
+            </p>
+          </div>
+        </div>
+        <div>
+          <span
+            class="font-16 font-bold mt-12 text-primary mb-4 uppercase block"
+            >Modules spécifiques</span
+          >
+          <p>
+            efficacement les apprenants : en visant des compétences et
+            connaissances clés nécessaires à leur métier et en formulant des
+            objectifs pédagogiques cohérents et atteignables et mesurables
+          </p>
+          <div class="flex xl:block justify-center">
+            <app-button class="mt-4">See the offers</app-button>
+          </div>
+        </div>
+      </div>
+      <app-section-title>
+        NOS PARTENAIRES
+      </app-section-title>
+      <div class="xl:flex justify-between items-baseline">
+        <div class="flex flex-col mt-16 xl:mt-0">
+          <img class="h-auto" src="~/assets/img/home/natural_retailers.png" />
+          <span class="text-center mt-6">Natural Retailers</span>
+        </div>
+        <div class="flex flex-col mt-16 xl:mt-0">
+          <img src="~/assets/img/home/brands.png" />
+          <span class="text-center mt-6">Brands</span>
+        </div>
+        <div class="flex flex-col mt-16 xl:mt-0">
+          <img src="~/assets/img/home/sales_force.png" />
+          <span class="text-center mt-6">Sales force</span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .lh-27 {
   line-height: 27px;
+}
+
+.custom-mr {
+  @media screen and (min-width: 1280px) {
+    margin-right: 160px;
+  }
+}
+
+.font-16 {
+  font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+.left-line {
+  padding: 5px 20px;
+  position: relative;
+
+  span {
+    margin-bottom: 22px;
+    display: block;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100px;
+    @apply bg-primary;
+    left: 0;
+    top: 0;
+  }
 }
 
 .custom-underline {
