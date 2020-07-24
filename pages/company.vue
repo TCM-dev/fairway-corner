@@ -118,6 +118,47 @@
         </p>
       </div>
     </section>
+    <app-section-title class="mt-16 text-left self-start">
+      OUR BUSINESS STORY
+    </app-section-title>
+    <section class="mt-16">
+      <div class="flex">
+        <div class="flex flex-col flex-1 business-story-left items-center">
+          <span class="font-semibold text-2xl">LOREM</span>
+          <p class="pt-4">
+            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+            nonumy eirmod tempor invidunt ut labore
+          </p>
+        </div>
+        <hr class="vertical-line" />
+        <div class="flex-1" />
+      </div>
+      <div class="flex">
+        <div class="flex-1" />
+        <hr class="vertical-line" />
+        <div class="flex flex-col flex-1 business-story-right items-center">
+          <span class="font-semibold text-2xl">LOREM</span>
+          <p class="pt-4">
+            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+            nonumy eirmod tempor invidunt ut labore
+          </p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex flex-col flex-1 business-story-left items-center">
+          <span class="font-semibold text-2xl">LOREM</span>
+          <p class="pt-4">
+            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+            nonumy eirmod tempor invidunt ut labore
+          </p>
+        </div>
+        <hr class="vertical-line" />
+        <div class="flex-1" />
+      </div>
+    </section>
+    <div class="w-64 mt-8">
+      <app-logo />
+    </div>
   </div>
 </template>
 
@@ -128,6 +169,67 @@
 
 img {
   max-width: 500px;
+}
+
+.vertical-line {
+  height: 250px;
+  @media screen and (min-width: 1280px) {
+    height: 200px;
+  }
+  width: 5px;
+  margin: 0 20px;
+  box-shadow: -3px -3px 6px #fff,
+    3px 3px 6px rgba($color: #000000, $alpha: 0.16);
+}
+
+.business-story-left {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: -20px;
+    width: 62px;
+    height: 1px;
+    @apply bg-primary;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 7.5px;
+    right: 35px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    @apply bg-primary;
+  }
+}
+
+.business-story-right {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: -20px;
+    width: 62px;
+    height: 1px;
+    @apply bg-primary;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 7.5px;
+    left: 35px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    @apply bg-primary;
+  }
 }
 
 .custom-h {
