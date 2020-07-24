@@ -42,9 +42,30 @@
         QU’EST-CE QUE L’E-LEARNING
       </app-section-title>
     </div>
-    <section class="faq bg-primary text-white flex custom-container">
-      <div class="flex-1 flex flex-col">
-        <span class="text-4xl font-bold">Why us?</span>
+    <section
+      class="faq bg-primary text-white flex flex-col xl:flex-row custom-container relative"
+    >
+      <div
+        class="xl:absolute custom-top left-0 flex flex-col xl:flex-row w-full"
+      >
+        <app-drop-down-card class="mb-8 xl:mb-0 xl:flex-1">
+          <app-section-title class="text-black text-base">
+            OUR SPECIALITY
+          </app-section-title>
+        </app-drop-down-card>
+        <app-drop-down-card class="mb-8 xl:mb-0 xl:flex-1">
+          <app-section-title class="text-black text-base">
+            EFFICIENT LEARNING
+          </app-section-title>
+        </app-drop-down-card>
+        <app-drop-down-card class="mb-8 xl:mb-0 xl:flex-1">
+          <app-section-title class="text-black text-base">
+            DELIVER
+          </app-section-title>
+        </app-drop-down-card>
+      </div>
+      <div class="xl:flex-1 flex flex-col">
+        <span class="xl:text-4xl font-bold">Why us?</span>
         <p class="lh-27">
           We are not just another learning platform, we offer a LMS specialized
           in the natural products industry. We go a step further and offer a
@@ -54,22 +75,26 @@
           the most effective and engaging brand training:
         </p>
       </div>
-      <div class="flex-1 flex flex-col">
-        <span class="text-4xl font-bold">Who are they?</span>
+      <div class="xl:flex-1 flex flex-col">
+        <span class="xl:text-4xl font-bold mt-8 xl:mt-0">Who are they?</span>
         <p class="lh-27">
           Visit production facilities and get to know the brand
         </p>
-        <span class="text-4xl font-bold mt-4">What's in it for me?</span>
+        <span class="xl:text-4xl font-bold mt-8 xl:mt-4">
+          What's in it for me?
+        </span>
         <p class="lh-27">
           Learn about the product
         </p>
-        <span class="text-4xl font-bold mt-4">Why should I buy it?</span>
+        <span class="xl:text-4xl font-bold mt-8 xl:mt-4">
+          Why should I buy it?
+        </span>
         <p class="lh-27">
           Retain key brand messages
         </p>
       </div>
-      <div class="flex-1 flex flex-col">
-        <span class="text-4xl font-bold custom-underline">
+      <div class="xl:flex-1 flex flex-col">
+        <span class="xl:text-4xl font-bold custom-underline mt-8 xl:mt-0">
           ARE YOU INTERESTED?
         </span>
         <p class="lh-27 mt-4">
@@ -90,7 +115,11 @@
 
 .custom-underline {
   position: relative;
-  padding-bottom: 9px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 9px;
+  }
 
   &::after {
     content: "";
@@ -132,8 +161,36 @@
 }
 
 .faq {
-  & > div:not(:last-child) {
-    margin-right: 150px;
+  @media screen and (min-width: 1280px) {
+    padding-top: 124px;
+    & > div:not(:last-child) {
+      margin-right: 150px;
+    }
   }
+
+  .text-base {
+    font-size: 16px !important;
+    @media screen and (min-width: 1280px) {
+      font-size: 36px !important;
+    }
+  }
+
+  .custom-top {
+    // padding: 0 65px;
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 150px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      & > div:not(:last-child) {
+        margin-right: 65px;
+      }
+    }
+  }
+}
+
+.custom-top {
+  top: -108px;
 }
 </style>
