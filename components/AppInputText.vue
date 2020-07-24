@@ -18,9 +18,11 @@ export default {
       default: "",
     },
   },
-  mounted() {
-    const input = this.$refs["Entrer votre mot de passe"];
-    input.setAttribute("size", input.getAttribute("placeholder").length);
-  },
 };
 </script>
+
+<style scoped>
+input {
+  width: 100%;
+}
+</style>

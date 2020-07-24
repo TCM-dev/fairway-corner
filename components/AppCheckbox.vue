@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <div class="flex items-center w-full">
     <div class="relative inline-block">
       <input type="checkbox" class="h-5 w-5 opacity-0" :name="name" v-model="checked" />
       <div

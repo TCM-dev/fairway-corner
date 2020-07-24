@@ -5,16 +5,14 @@
       <section class="flex flex-col items-center custom-width">
         <!-- Inputs -->
         <div class="w-full flex flex-col">
-          <label class="font-semibold">E-mail</label>
-          <input />
+          <label class="font-semibold my-2">E-mail</label>
+          <app-input-text placeholder="Entrer votre adresse mail" />
         </div>
         <div class="w-full flex flex-col">
-          <label class="font-semibold">Mot de passe</label>
-          <input />
+          <label class="font-semibold my-2">Mot de passe</label>
+          <app-input-text placeholder="Entrer votre mot de passe" />
         </div>
-        <a href="#" class="font-semibold text-right w-full mt-1">
-          Mot de passe oublié
-        </a>
+        <a href="#" class="font-semibold text-right w-full mt-2 underline">Mot de passe oublié</a>
         <app-button class="mt-8">Connexion</app-button>
       </section>
       <hr class="bg-primary hidden xl:block" />

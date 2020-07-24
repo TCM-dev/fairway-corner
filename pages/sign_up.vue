@@ -4,19 +4,22 @@
     <div class="custom-margin flex flex-col xl:flex-row">
       <section class="flex flex-col items-center custom-width">
         <!-- Inputs -->
-        <div class="w-full flex flex-col">
-          <label class="font-semibold">E-mail</label>
-          <input />
+        <div class="w-full flex flex-col mt-2">
+          <label class="font-semibold mb-1">E-mail</label>
+          <app-input-text placeholder="Entrer votre adresse mail" />
         </div>
-        <div class="w-full flex flex-col">
-          <label class="font-semibold">Mot de passe</label>
-          <input />
+        <div class="w-full flex flex-col mt-2">
+          <label class="font-semibold mb-1">Mot de passe</label>
+          <app-input-text placeholder="Entrer votre mot de passe" />
         </div>
-        <div class="w-full flex flex-col">
-          <label class="font-semibold">Confirmer votre de passe</label>
-          <input />
+        <div class="w-full flex flex-col mt-2">
+          <label class="font-semibold mb-1">Confirmer votre de passe</label>
+          <app-input-text placeholder="Confirmer votre mot de passe" />
         </div>
-        J'ai lu et j'accepte...
+        <app-checkbox checkbox1 class="text-sm mt-2">
+          J'ai lu et j'accepte
+          <nuxt-link to="/" class="underline">conditions d'utilisations</nuxt-link>
+        </app-checkbox>
         <app-button class="mt-8">S'inscrire</app-button>
       </section>
       <hr class="bg-primary hidden xl:block" />
