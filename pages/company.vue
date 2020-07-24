@@ -1,13 +1,10 @@
 <template>
   <div class="custom-container flex flex-col items-center">
     <app-section-title class="m-auto title">COMPANY</app-section-title>
-    <app-section-title class="mt-8 xl:text-left xl:self-start">
+    <app-section-title class="mt-8 text-left self-start">
       OUR MISSIONS
     </app-section-title>
-    <span class="mt-8 block text-2xl text-center xl:text-left xl:self-start">
-      Pour s’offrir une expérience de formation immersive et interactive
-    </span>
-    <div class="xl:flex">
+    <div class="xl:flex mt-16">
       <div class="flex flex-col justify-center items-center custom-mr">
         <img class="w-64 mb-8" src="~/assets/img/company/target.png" />
         <div class="flex-1 custom-max-width">
@@ -36,7 +33,7 @@
         </div>
       </div>
     </div>
-    <app-section-title class="mt-8 xl:text-left xl:self-start">
+    <app-section-title class="mt-8 text-left self-start">
       OUR VALUES
     </app-section-title>
     <section class="list-of-card">
@@ -98,6 +95,29 @@
         </p>
       </app-soft-card>
     </section>
+    <app-section-title class="mt-8 text-left self-start">
+      OUR TEAM
+    </app-section-title>
+    <section class="xl:flex">
+      <div class="flex flex-col items-center custom-mr">
+        <img src="~/assets/img/company/profil1.png" class="avatar" />
+        <span class="uppercase font-semibold text-center mt-2">Murielle</span>
+        <p class="mt-2">
+          Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+          diam
+        </p>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="~/assets/img/company/profil2.png" class="avatar" />
+        <span class="uppercase font-semibold text-center mt-2">Andrew</span>
+        <p class="mt-2">
+          Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+          diam
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -114,6 +134,17 @@ img {
   height: 80px;
 }
 
+.custom-mr {
+  @media screen and (min-width: 1280px) {
+    margin-right: 300px;
+  }
+}
+
+.avatar {
+  height: 176px;
+  width: 176px;
+  margin-top: 30px;
+}
 
 @media screen and (min-width: 1280px) {
   .list-of-card {
