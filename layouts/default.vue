@@ -24,7 +24,7 @@ body {
 }
 
 .custom-container {
-  padding: 45px 65px;
+  padding: 45px 45px;
 
   @media screen and (min-width: 1280px) {
     padding: 55px 150px;

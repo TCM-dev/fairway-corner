@@ -7,18 +7,44 @@
         <div class="logo-inner-size" />
       </nuxt-link>
       <nav>
-        <nuxt-link :to="localePath('index')" :class="style">
+        <nuxt-link
+          @click.native="close"
+          :to="localePath('index')"
+          :class="style"
+        >
           Homepage
         </nuxt-link>
-        <nuxt-link :to="localePath('components')" :class="style">
+        <nuxt-link
+          @click.native="close"
+          :to="localePath('components')"
+          :class="style"
+        >
           Components
         </nuxt-link>
-        <nuxt-link :to="localePath('offer')" :class="style">Offer</nuxt-link>
-        <nuxt-link :to="localePath('company')" :class="style">
+        <nuxt-link
+          @click.native="close"
+          :to="localePath('offer')"
+          :class="style"
+          >Offer</nuxt-link
+        >
+        <nuxt-link
+          @click.native="close"
+          :to="localePath('company')"
+          :class="style"
+        >
           Company
         </nuxt-link>
-        <nuxt-link :to="localePath('sign_in')" :class="style">Login</nuxt-link>
-        <nuxt-link :to="localePath('sign_up')" :class="style">
+        <nuxt-link
+          @click.native="close"
+          :to="localePath('sign_in')"
+          :class="style"
+          >Login</nuxt-link
+        >
+        <nuxt-link
+          @click.native="close"
+          :to="localePath('sign_up')"
+          :class="style"
+        >
           Sign up
         </nuxt-link>
         <a href="#" :class="style">Demo</a>
@@ -51,16 +77,37 @@
       <button @click="enabled = false" class="mb-4">
         <app-logo-icon class="logo-mobile-size" />
       </button>
-      <nuxt-link :to="localePath('index')" :class="style">
+      <nuxt-link @click.native="close" :to="localePath('index')" :class="style">
         Homepage
       </nuxt-link>
-      <nuxt-link :to="localePath('components')" :class="style">
+      <nuxt-link
+        @click.native="close"
+        :to="localePath('components')"
+        :class="style"
+      >
         Components
       </nuxt-link>
-      <nuxt-link :to="localePath('offer')" :class="style">Offer</nuxt-link>
-      <nuxt-link :to="localePath('company')" :class="style">Company</nuxt-link>
-      <nuxt-link :to="localePath('sign_in')" :class="style">Login</nuxt-link>
-      <nuxt-link :to="localePath('sign_up')" :class="style">Sign up</nuxt-link>
+      <nuxt-link @click.native="close" :to="localePath('offer')" :class="style"
+        >Offer</nuxt-link
+      >
+      <nuxt-link
+        @click.native="close"
+        :to="localePath('company')"
+        :class="style"
+        >Company</nuxt-link
+      >
+      <nuxt-link
+        @click.native="close"
+        :to="localePath('sign_in')"
+        :class="style"
+        >Login</nuxt-link
+      >
+      <nuxt-link
+        @click.native="close"
+        :to="localePath('sign_up')"
+        :class="style"
+        >Sign up</nuxt-link
+      >
       <a href="#" :class="style">Demo</a>
       <div class="w-full">
         <nuxt-link
@@ -188,6 +235,11 @@ export default {
     return {
       enabled: false,
     };
+  },
+  methods: {
+    close() {
+      this.enabled = false;
+    },
   },
   computed: {
     style() {
