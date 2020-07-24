@@ -1,163 +1,151 @@
 <template>
-  <div class="custom-container flex flex-col items-center">
-    <app-section-title class="m-auto title">COMPANY</app-section-title>
-    <app-section-title class="mt-16 text-left self-start">
-      OUR MISSIONS
-    </app-section-title>
-    <div class="xl:flex mt-16">
-      <div class="flex flex-col justify-center items-center custom-mr">
-        <img class="w-64 mb-8" src="~/assets/img/company/target.png" />
-        <div class="flex-1 custom-max-width">
-          <span class="font-16 font-bold mb-4 uppercase block text-center"
-            >MISSION</span
-          >
-          <p class="text-center">
-            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna
-          </p>
+  <div>
+    <div class="custom-container flex flex-col items-center">
+      <app-section-title class="m-auto title">COMPANY</app-section-title>
+      <app-section-title class="mt-16 text-left self-start">OUR MISSIONS</app-section-title>
+      <div class="xl:flex mt-16">
+        <div class="flex flex-col justify-center items-center custom-mr">
+          <img class="w-64 mb-8" src="~/assets/img/company/target.png" />
+          <div class="flex-1 custom-max-width">
+            <span class="font-16 font-bold mb-4 uppercase block text-center">MISSION</span>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img class="w-48 mb-8 -mt-8 xl:my-0" src="~/assets/img/company/question.png" />
+          <div class="flex-1 custom-max-width -mt-24 xl:my-0">
+            <span class="font-16 font-bold mb-4 uppercase block text-center">PROBLEMATIC</span>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna
+            </p>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col justify-center items-center">
-        <img
-          class="w-48 mb-8 -mt-8 xl:my-0"
-          src="~/assets/img/company/question.png"
-        />
-        <div class="flex-1 custom-max-width -mt-24 xl:my-0">
-          <span class="font-16 font-bold mb-4 uppercase block text-center"
-            >PROBLEMATIC</span
-          >
-          <p class="text-center">
-            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna
+      <app-section-title class="mt-16 text-left self-start">OUR VALUES</app-section-title>
+      <section class="list-of-card">
+        <app-soft-card>
+          <img class="custom-h" src="~/assets/img/company/innovation.png" />
+          <span class="uppercase font-bold text-2xl">Innovation</span>
+          <p class="card-text text-center">
+            By using the latest technology available we can share a message of
+            health and inspire and wellness in others
+          </p>
+        </app-soft-card>
+        <app-soft-card>
+          <img class="custom-h" src="~/assets/img/company/simplicity.png" />
+          <span class="uppercase font-bold text-2xl">Simplicity</span>
+          <p class="card-text text-center">We want an easy design that makes sense for everyone</p>
+        </app-soft-card>
+        <app-soft-card>
+          <img class="custom-h" src="~/assets/img/company/engagement.png" />
+          <span class="uppercase font-bold text-2xl">Engagement</span>
+          <p class="card-text text-center">
+            Involving learners provides the greatest impact on growth and
+            development
+          </p>
+        </app-soft-card>
+        <app-soft-card>
+          <img class="custom-h" src="~/assets/img/company/natural.png" />
+          <span class="uppercase font-bold text-2xl">Natural</span>
+          <p class="card-text text-center">
+            By using the latest technology available we can share a message of
+            health and inspire and wellness in others
+          </p>
+        </app-soft-card>
+      </section>
+      <section class="second-list-of-card">
+        <app-soft-card>
+          <img class="custom-h" src="~/assets/img/company/collab.png" />
+          <span class="uppercase font-bold text-2xl">Collaboration</span>
+          <p class="card-text text-center">
+            By using the latest technology available we can share a message of
+            health and inspire and wellness in others
+          </p>
+        </app-soft-card>
+        <app-soft-card>
+          <img class="custom-h" src="~/assets/img/company/values.png" />
+          <span class="uppercase font-bold text-2xl">Values</span>
+          <p class="card-text text-center">
+            By using the latest technology available we can share a message of
+            health and inspire and wellness in others
+          </p>
+        </app-soft-card>
+        <app-soft-card class="mr-0">
+          <img class="custom-h" src="~/assets/img/company/strategy.png" />
+          <span class="uppercase font-bold text-2xl">Strategy</span>
+          <p class="card-text text-center">
+            By using the latest technology available we can share a message of
+            health and inspire and wellness in others
+          </p>
+        </app-soft-card>
+      </section>
+      <app-section-title class="mt-16 text-left self-start">OUR TEAM</app-section-title>
+      <section class="xl:flex">
+        <div class="flex flex-col items-center custom-mr">
+          <img src="~/assets/img/company/profil1.png" class="avatar" />
+          <span class="uppercase font-semibold text-center mt-2">Murielle</span>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+            diam
           </p>
         </div>
+        <div class="flex flex-col items-center">
+          <img src="~/assets/img/company/profil2.png" class="avatar" />
+          <span class="uppercase font-semibold text-center mt-2">Andrew</span>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+            diam
+          </p>
+        </div>
+      </section>
+      <app-section-title class="mt-16 text-left self-start">OUR BUSINESS STORY</app-section-title>
+      <section class="mt-16">
+        <div class="flex">
+          <div class="flex flex-col flex-1 business-story-left items-center">
+            <span class="font-semibold text-2xl">LOREM</span>
+            <p class="pt-4">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+              nonumy eirmod tempor invidunt ut labore
+            </p>
+          </div>
+          <hr class="vertical-line" />
+          <div class="flex-1" />
+        </div>
+        <div class="flex">
+          <div class="flex-1" />
+          <hr class="vertical-line" />
+          <div class="flex flex-col flex-1 business-story-right items-center">
+            <span class="font-semibold text-2xl">LOREM</span>
+            <p class="pt-4">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+              nonumy eirmod tempor invidunt ut labore
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="flex flex-col flex-1 business-story-left items-center">
+            <span class="font-semibold text-2xl">LOREM</span>
+            <p class="pt-4">
+              Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
+              nonumy eirmod tempor invidunt ut labore
+            </p>
+          </div>
+          <hr class="vertical-line" />
+          <div class="flex-1" />
+        </div>
+      </section>
+      <div class="w-64 mt-8 mb-8">
+        <app-logo />
       </div>
     </div>
-    <app-section-title class="mt-16 text-left self-start">
-      OUR VALUES
-    </app-section-title>
-    <section class="list-of-card">
-      <app-soft-card>
-        <img class="custom-h" src="~/assets/img/company/innovation.png" />
-        <span class="uppercase font-bold text-2xl">Innovation</span>
-        <p class="card-text text-center">
-          By using the latest technology available we can share a message of
-          health and inspire and wellness in others
-        </p>
-      </app-soft-card>
-      <app-soft-card>
-        <img class="custom-h" src="~/assets/img/company/simplicity.png" />
-        <span class="uppercase font-bold text-2xl">Simplicity</span>
-        <p class="card-text text-center">
-          We want an easy design that makes sense for everyone
-        </p>
-      </app-soft-card>
-      <app-soft-card>
-        <img class="custom-h" src="~/assets/img/company/engagement.png" />
-        <span class="uppercase font-bold text-2xl">Engagement</span>
-        <p class="card-text text-center">
-          Involving learners provides the greatest impact on growth and
-          development
-        </p>
-      </app-soft-card>
-      <app-soft-card>
-        <img class="custom-h" src="~/assets/img/company/natural.png" />
-        <span class="uppercase font-bold text-2xl">Natural</span>
-        <p class="card-text text-center">
-          By using the latest technology available we can share a message of
-          health and inspire and wellness in others
-        </p>
-      </app-soft-card>
-    </section>
-    <section class="second-list-of-card">
-      <app-soft-card>
-        <img class="custom-h" src="~/assets/img/company/collab.png" />
-        <span class="uppercase font-bold text-2xl">Collaboration</span>
-        <p class="card-text text-center">
-          By using the latest technology available we can share a message of
-          health and inspire and wellness in others
-        </p>
-      </app-soft-card>
-      <app-soft-card>
-        <img class="custom-h" src="~/assets/img/company/values.png" />
-        <span class="uppercase font-bold text-2xl">Values</span>
-        <p class="card-text text-center">
-          By using the latest technology available we can share a message of
-          health and inspire and wellness in others
-        </p>
-      </app-soft-card>
-      <app-soft-card class="mr-0">
-        <img class="custom-h" src="~/assets/img/company/strategy.png" />
-        <span class="uppercase font-bold text-2xl">Strategy</span>
-        <p class="card-text text-center">
-          By using the latest technology available we can share a message of
-          health and inspire and wellness in others
-        </p>
-      </app-soft-card>
-    </section>
-    <app-section-title class="mt-16 text-left self-start">
-      OUR TEAM
-    </app-section-title>
-    <section class="xl:flex">
-      <div class="flex flex-col items-center custom-mr">
-        <img src="~/assets/img/company/profil1.png" class="avatar" />
-        <span class="uppercase font-semibold text-center mt-2">Murielle</span>
-        <p class="mt-2">
-          Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy
-          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-          diam
-        </p>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="~/assets/img/company/profil2.png" class="avatar" />
-        <span class="uppercase font-semibold text-center mt-2">Andrew</span>
-        <p class="mt-2">
-          Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy
-          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-          diam
-        </p>
-      </div>
-    </section>
-    <app-section-title class="mt-16 text-left self-start">
-      OUR BUSINESS STORY
-    </app-section-title>
-    <section class="mt-16">
-      <div class="flex">
-        <div class="flex flex-col flex-1 business-story-left items-center">
-          <span class="font-semibold text-2xl">LOREM</span>
-          <p class="pt-4">
-            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
-            nonumy eirmod tempor invidunt ut labore
-          </p>
-        </div>
-        <hr class="vertical-line" />
-        <div class="flex-1" />
-      </div>
-      <div class="flex">
-        <div class="flex-1" />
-        <hr class="vertical-line" />
-        <div class="flex flex-col flex-1 business-story-right items-center">
-          <span class="font-semibold text-2xl">LOREM</span>
-          <p class="pt-4">
-            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
-            nonumy eirmod tempor invidunt ut labore
-          </p>
-        </div>
-      </div>
-      <div class="flex">
-        <div class="flex flex-col flex-1 business-story-left items-center">
-          <span class="font-semibold text-2xl">LOREM</span>
-          <p class="pt-4">
-            Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam
-            nonumy eirmod tempor invidunt ut labore
-          </p>
-        </div>
-        <hr class="vertical-line" />
-        <div class="flex-1" />
-      </div>
-    </section>
-    <div class="w-64 mt-8">
-      <app-logo />
+    <div class="max-w-screen-xl mx-auto mb-8">
+      <app-contact />
     </div>
   </div>
 </template>
