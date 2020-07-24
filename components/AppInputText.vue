@@ -3,7 +3,7 @@
     <input
       :id="placeholder"
       :ref="placeholder"
-      class="py-2 px-4 border border-lightGrey rounded-lg font-medium"
+      class="py-2 px-4 border border-lightGrey rounded-lg font-medium custom-box-shadow"
       type="text"
       :placeholder="placeholder"
     />
