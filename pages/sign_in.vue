@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center">
-    <app-section-title class="m-auto">Login</app-section-title>
+    <app-section-title class="m-auto">LOGIN</app-section-title>
     <div class="custom-margin flex flex-col xl:flex-row">
       <section class="flex flex-col items-center custom-width">
         <!-- Inputs -->
