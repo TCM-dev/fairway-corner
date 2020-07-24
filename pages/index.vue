@@ -1,7 +1,40 @@
 <template>
   <div>
+    <div class="xl:h-screen xl:flex items-center hp-top">
+      <div>
+        <span class="font-bold title"
+          >Immersion interactive de votre avenir</span
+        >
+        <p class="lh-27 paragraph">
+          Headquartered in Paris (France) and founded by Murielle Garnier and
+          Andrew Saxon, Fairway corner is an innovative digital learning
+          start-up company in alignment with the Health and Wellness, Natural
+          Products, Food & Beverage industry.
+        </p>
+        <img
+          src="~/assets/img/home/perso.png"
+          class="perso perso-animate my-10"
+        />
+        <div class="flex mt-12 items-center justify-center xl:justify-start">
+          <div
+            class="play bg-primary flex items-center justify-center rounded-full"
+          >
+            <img src="~/assets/svg/icons/play.svg" />
+          </div>
+          <span class="ml-6 text-primary text-4xl font-semibold"
+            >Play video</span
+          >
+        </div>
+        <div class="flex xl:block justify-center">
+          <app-button class="mt-12">Request a demo</app-button>
+        </div>
+      </div>
+    </div>
     <div class="custom-container">
-      <app-section-title class="custom-margin-bottom">
+      <app-section-title
+        class="custom-margin-bottom"
+        style="margin-top: 100px;"
+      >
         OUR COMPANY
       </app-section-title>
       <section class="flex flex-col-reverse xl:flex-row section">
@@ -140,7 +173,7 @@
           </ul>
         </div>
       </section>
-      <div class="xl:flex items-center">
+      <div class="xl:flex items-center mt-8">
         <div class="flex items-center custom-mr">
           <img class="w-24 xl:w-auto" src="~/assets/img/home/1.png" />
           <div class="flex-1">
@@ -182,7 +215,7 @@
           </div>
         </div>
       </div>
-      <app-section-title>
+      <app-section-title class="mt-16">
         NOS PARTENAIRES
       </app-section-title>
       <div class="xl:flex justify-between items-baseline">
@@ -204,6 +237,81 @@
 </template>
 
 <style lang="scss" scoped>
+.hp-top {
+  padding: 45px 45px;
+
+  @media screen and (min-width: 1280px) {
+    padding: 55px 150px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url("../assets/img/home/background.png");
+    background-size: 105% 1150px;
+    background-position-x: center;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+  }
+}
+
+.title {
+  font-size: 24px;
+  color: #121212;
+  display: block;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 50px;
+    width: 575px;
+  }
+}
+
+.paragraph {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    width: 525px;
+  }
+}
+
+.perso {
+  @media screen and (min-width: 1280px) {
+    width: 400px;
+    position: absolute;
+    top: 130px;
+    right: 190px;
+  }
+
+  animation: floating 10s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: rotate(5deg) translateY(30px);
+  }
+  10% {
+    transform: rotate(7deg) translateY(20px);
+  }
+  30% {
+    transform: rotate(0deg) translateY(-10px);
+  }
+  35% {
+    transform: rotate(-2deg) translateY(-8px);
+  }
+  70% {
+    transform: rotate(-6deg) translateY(10px);
+  }
+  95% {
+    transform: rotate(3deg) translateY(15px);
+  }
+  100% {
+    transform: rotate(5deg) translateY(30px);
+  }
+}
+
+.play {
+  height: 49px;
+  width: 49px;
+}
+
 .lh-27 {
   line-height: 27px;
 }
