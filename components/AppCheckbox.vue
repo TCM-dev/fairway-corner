@@ -9,7 +9,6 @@
     </div>
     <label class="ml-2 mb-1" :for="name">
       <slot>{{label}}</slot>
-      test
     </label>
   </div>
 </template>
