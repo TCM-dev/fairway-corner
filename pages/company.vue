@@ -236,12 +236,6 @@ img {
   height: 80px;
 }
 
-.custom-mr {
-  @media screen and (min-width: 1280px) {
-    margin-right: 300px;
-  }
-}
-
 .avatar {
   height: 176px;
   width: 176px;

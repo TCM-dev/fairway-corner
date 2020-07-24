@@ -14,13 +14,13 @@
         >
           Homepage
         </nuxt-link>
-        <nuxt-link
+        <!-- <nuxt-link
           @click.native="close"
           :to="localePath('components')"
           :class="style"
         >
           Components
-        </nuxt-link>
+        </nuxt-link> -->
         <nuxt-link
           @click.native="close"
           :to="localePath('offer')"
@@ -80,13 +80,13 @@
       <nuxt-link @click.native="close" :to="localePath('index')" :class="style">
         Homepage
       </nuxt-link>
-      <nuxt-link
+      <!-- <nuxt-link
         @click.native="close"
         :to="localePath('components')"
         :class="style"
       >
         Components
-      </nuxt-link>
+      </nuxt-link> -->
       <nuxt-link @click.native="close" :to="localePath('offer')" :class="style"
         >Offer</nuxt-link
       >
