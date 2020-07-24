@@ -18,7 +18,7 @@
         </div>
         <app-checkbox checkbox1 class="text-sm mt-2">
           J'ai lu et j'accepte
-          <nuxt-link to="/" class="underline">conditions d'utilisations</nuxt-link>
+          <a href="#" class="underline">les conditions d'utilisations</a>
         </app-checkbox>
         <app-button class="mt-8">S'inscrire</app-button>
       </section>
@@ -44,7 +44,7 @@
         <!-- </div> -->
         <p class="second-custom-width text-sm">
           *En choisissant la connexion avec les réseaux sociaux vous accepter
-          <nuxt-link to="/" class="underline">les conditions d'utilisations</nuxt-link>
+          <a href="#" class="underline">les conditions d'utilisations</a>
         </p>
       </section>
     </div>
