@@ -10,6 +10,10 @@ button {
   font-size: 18px;
   height: 50px;
   min-width: 233px;
+  @media screen and (max-width: 300px) {
+    min-width: inherit;
+    width: 100%;
+  }
   border-radius: 40px;
   box-shadow: -3px -3px 6px #fff,
     3px 3px 6px rgba($color: #000000, $alpha: 0.15);

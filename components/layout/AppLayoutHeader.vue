@@ -13,10 +13,12 @@
         <nuxt-link :to="localePath('components')" :class="style">
           Components
         </nuxt-link>
-        <nuxt-link to="" :class="style">Offer</nuxt-link>
-        <nuxt-link to="" :class="style">Company</nuxt-link>
-        <nuxt-link to="" :class="style">Login</nuxt-link>
-        <nuxt-link to="" :class="style">Demo</nuxt-link>
+        <nuxt-link :to="localePath('offer')" :class="style">Offer</nuxt-link>
+        <nuxt-link :to="localePath('company')" :class="style">
+          Company
+        </nuxt-link>
+        <nuxt-link :to="localePath('sign_in')" :class="style">Login</nuxt-link>
+        <a href="#" :class="style">Demo</a>
         <nuxt-link v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')">
           English
         </nuxt-link>
@@ -46,10 +48,10 @@
       <nuxt-link :to="localePath('components')" :class="style">
         Components
       </nuxt-link>
-      <nuxt-link to="" :class="style">Offer</nuxt-link>
-      <nuxt-link to="" :class="style">Company</nuxt-link>
-      <nuxt-link to="" :class="style">Login</nuxt-link>
-      <nuxt-link to="" :class="style">Demo</nuxt-link>
+      <nuxt-link :to="localePath('offer')" :class="style">Offer</nuxt-link>
+      <nuxt-link :to="localePath('company')" :class="style">Company</nuxt-link>
+      <nuxt-link :to="localePath('sign_in')" :class="style">Login</nuxt-link>
+      <a href="#" :class="style">Demo</a>
       <nuxt-link v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')">
         English
       </nuxt-link>
@@ -157,13 +159,13 @@
 export default {
   data() {
     return {
-      enabled: true
+      enabled: true,
     };
   },
   computed: {
     style() {
       return "font-semibold text-white margin";
-    }
-  }
+    },
+  },
 };
 </script>
