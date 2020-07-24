@@ -18,12 +18,21 @@
           Company
         </nuxt-link>
         <nuxt-link :to="localePath('sign_in')" :class="style">Login</nuxt-link>
-        <a href="#" :class="style">Demo</a>
-        <nuxt-link v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')">
-          English
+        <nuxt-link :to="localePath('sign_up')" :class="style">
+          Sign up
         </nuxt-link>
-        <nuxt-link v-if="$i18n.locale !== 'fr'" :to="switchLocalePath('fr')">
-          Français
+        <a href="#" :class="style">Demo</a>
+        <nuxt-link
+          :class="$i18n.locale === 'fr' ? 'lang active' : 'lang'"
+          :to="switchLocalePath('fr')"
+        >
+          FR
+        </nuxt-link>
+        <nuxt-link
+          :class="$i18n.locale === 'en' ? 'lang active' : 'lang'"
+          :to="switchLocalePath('en')"
+        >
+          EN
         </nuxt-link>
       </nav>
     </header>
@@ -51,13 +60,22 @@
       <nuxt-link :to="localePath('offer')" :class="style">Offer</nuxt-link>
       <nuxt-link :to="localePath('company')" :class="style">Company</nuxt-link>
       <nuxt-link :to="localePath('sign_in')" :class="style">Login</nuxt-link>
+      <nuxt-link :to="localePath('sign_up')" :class="style">Sign up</nuxt-link>
       <a href="#" :class="style">Demo</a>
-      <nuxt-link v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')">
-        English
-      </nuxt-link>
-      <nuxt-link v-if="$i18n.locale !== 'fr'" :to="switchLocalePath('fr')">
-        Français
-      </nuxt-link>
+      <div class="w-full">
+        <nuxt-link
+          :class="$i18n.locale === 'fr' ? 'lang active' : 'lang'"
+          :to="switchLocalePath('fr')"
+        >
+          FR
+        </nuxt-link>
+        <nuxt-link
+          :class="$i18n.locale === 'en' ? 'lang active' : 'lang'"
+          :to="switchLocalePath('en')"
+        >
+          EN
+        </nuxt-link>
+      </div>
     </nav>
   </div>
 </template>
@@ -139,14 +157,23 @@
   margin: 0 30px;
 }
 
-.nuxt-link-exact-active:not(.logo-size) {
+.lang {
+  margin-right: 15px;
+  @apply font-semibold text-white;
+}
+
+.nuxt-link-exact-active:not(.logo-size),
+.active {
   position: relative;
   &::after {
     content: "";
     position: absolute;
     height: 2px;
     width: 23px;
-    background: white;
+    @apply bg-primary;
+    @media screen and (min-width: 1280px) {
+      background: white;
+    }
     bottom: -5.5px;
     left: 0;
     right: 0;

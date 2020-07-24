@@ -71,7 +71,7 @@
   @media screen and (min-width: 640px) {
     max-width: 450px;
   }
-  margin: 58px 165px 0;
+  margin: 58px 0 0;
 }
 
 hr {
