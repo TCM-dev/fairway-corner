@@ -64,6 +64,40 @@
           </app-button>
         </div>
       </div>
+      <app-section-title class="custom-margin-top xl:text-left xl:self-start">
+        NOS MODULES D'E-LEARNING
+      </app-section-title>
+      <span class="mt-8 block text-2xl text-center xl:text-left xl:self-start">
+        Pour s’offrir une expérience de formation immersive et interactive
+      </span>
+      <div class="xl:flex">
+        <div class="flex flex-col justify-center items-center custom-mr">
+          <img class="w-24 xl:w-auto xl:-mb-16" src="~/assets/img/home/1.png" />
+          <div class="flex-1 custom-max-width">
+            <span class="font-16 font-bold mb-4 uppercase block text-center"
+              >Modules généraux</span
+            >
+            <p class="text-center">
+              les apprenants, afin d’attiser leur curiosité et de maximiser les
+              taux de rétention de l’information via des teaser vidéo, des
+              activités de type rapid learning
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img class="w-24 xl:w-auto xl:-mb-16" src="~/assets/img/home/2.png" />
+          <div class="flex-1 custom-max-width">
+            <span class="font-16 font-bold mb-4 uppercase block text-center"
+              >Modules spécifiques</span
+            >
+            <p class="text-center">
+              efficacement les apprenants : en visant des compétences et
+              connaissances clés nécessaires à leur métier et en formulant des
+              objectifs pédagogiques cohérents et atteignables et mesurables
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -80,6 +114,18 @@ img {
 .custom-gap {
   @media screen and (min-width: 1280px) {
     margin-right: 150px;
+  }
+}
+
+.custom-max-width {
+  @media screen and (min-width: 1280px) {
+    max-width: 420px;
+  }
+}
+
+.custom-mr {
+  @media screen and (min-width: 1280px) {
+    margin-right: 250px;
   }
 }
 
@@ -116,6 +162,14 @@ p {
       height: 2px;
       @apply bg-primary;
     }
+  }
+}
+
+.custom-margin-top {
+  margin-top: 85px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 140px;
   }
 }
 </style>
