@@ -1,86 +1,102 @@
 <template>
-  <footer class="bg-primaryGreen p-4 mb-8">
-    <app-logo class="block max-w-xs custom-logo-layout" white />
-    <div>
-      <div class="flex flex-col md:flex-row custom-footer-layout">
-        <div class="w-full mb-4">
-          <div class="flex justify-between mb-4">
-            <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Home</nuxt-link>
-            <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" />
+  <div>
+    <footer class="bg-primaryGreen p-4">
+      <app-logo class="block max-w-xs custom-logo-layout" white />
+      <div>
+        <div class="flex flex-col md:flex-row custom-footer-layout">
+          <div class="w-full mb-4">
+            <div class="flex justify-between mb-4">
+              <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Home</nuxt-link>
+              <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" />
+            </div>
+            <div class="flex flex-col">
+              <nuxt-link class="text-white" to="/">Présentation</nuxt-link>
+              <nuxt-link class="text-white" to="/">E-learning</nuxt-link>
+              <nuxt-link class="text-white" to="/">Clients</nuxt-link>
+            </div>
           </div>
-          <div class="flex flex-col">
-            <nuxt-link class="text-white" to="/">Présentation</nuxt-link>
-            <nuxt-link class="text-white" to="/">E-learning</nuxt-link>
-            <nuxt-link class="text-white" to="/">Clients</nuxt-link>
+          <div class="w-full mb-4">
+            <div class="flex justify-between mb-4">
+              <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Offer</nuxt-link>
+              <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" />
+            </div>
+            <div class="flex flex-col">
+              <nuxt-link class="text-white" to="/">Nos modules</nuxt-link>
+            </div>
           </div>
-        </div>
-        <div class="w-full mb-4">
-          <div class="flex justify-between mb-4">
-            <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Offer</nuxt-link>
-            <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" />
+          <div class="w-full mb-4">
+            <div class="flex justify-between mb-4">
+              <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Company</nuxt-link>
+              <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" />
+            </div>
+            <div class="flex flex-col">
+              <nuxt-link class="text-white" to="/">Nos missions</nuxt-link>
+              <nuxt-link class="text-white" to="/">Nos valeurs</nuxt-link>
+              <nuxt-link class="text-white" to="/">Notre équipe</nuxt-link>
+            </div>
           </div>
-          <div class="flex flex-col">
-            <nuxt-link class="text-white" to="/">Nos modules</nuxt-link>
+          <div class="w-full mb-4">
+            <div class="flex justify-between mb-4">
+              <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Login</nuxt-link>
+              <!-- <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" /> -->
+            </div>
           </div>
-        </div>
-        <div class="w-full mb-4">
-          <div class="flex justify-between mb-4">
-            <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Company</nuxt-link>
-            <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" />
+          <div class="w-full mb-4">
+            <div class="flex justify-between mb-4">
+              <nuxt-link
+                class="relative link-arrowed text-white uppercase font-bold"
+                to="/"
+              >Request a demo</nuxt-link>
+              <!-- <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" /> -->
+            </div>
           </div>
-          <div class="flex flex-col">
-            <nuxt-link class="text-white" to="/">Nos missions</nuxt-link>
-            <nuxt-link class="text-white" to="/">Nos valeurs</nuxt-link>
-            <nuxt-link class="text-white" to="/">Notre équipe</nuxt-link>
-          </div>
-        </div>
-        <div class="w-full mb-4">
-          <div class="flex justify-between mb-4">
-            <nuxt-link class="relative link-arrowed text-white uppercase font-bold" to="/">Login</nuxt-link>
-            <!-- <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" /> -->
-          </div>
-        </div>
-        <div class="w-full mb-4">
-          <div class="flex justify-between mb-4">
-            <nuxt-link
-              class="relative link-arrowed text-white uppercase font-bold"
-              to="/"
-            >Request a demo</nuxt-link>
-            <!-- <img src="~/assets/svg/icons/chevron-bottom-white.svg" alt class="md:hidden" /> -->
-          </div>
-        </div>
-        <div class="w-full mb-4">
-          <div class="flex items-center flex-col justify-between mb-4">
-            <p class="w-full text-center uppercase text-white font-bold">Social media</p>
-            <div class="flex mt-2">
-              <nuxt-link to="/" class="mx-2">
-                <div>
-                  <img src="~/assets/svg/social-media/facebook.svg" alt />
-                </div>
-              </nuxt-link>
-              <nuxt-link to="/" class="mx-2">
-                <div>
-                  <img src="~/assets/svg/social-media/twitter-white.svg" alt />
-                </div>
-              </nuxt-link>
-              <nuxt-link to="/" class="mx-2">
-                <div>
-                  <img src="~/assets/svg/social-media/linkedin-white.svg" alt />
-                </div>
-              </nuxt-link>
+          <div class="w-full mb-4">
+            <div class="flex items-center flex-col justify-between mb-4">
+              <p class="w-full text-center uppercase text-white font-bold">Social media</p>
+              <div class="flex mt-2">
+                <nuxt-link to="/" class="mx-2">
+                  <div>
+                    <img src="~/assets/svg/social-media/facebook.svg" alt />
+                  </div>
+                </nuxt-link>
+                <nuxt-link to="/" class="mx-2">
+                  <div>
+                    <img src="~/assets/svg/social-media/twitter-white.svg" alt />
+                  </div>
+                </nuxt-link>
+                <nuxt-link to="/" class="mx-2">
+                  <div>
+                    <img src="~/assets/svg/social-media/linkedin-white.svg" alt />
+                  </div>
+                </nuxt-link>
+              </div>
             </div>
           </div>
         </div>
+        <div class="w-full mb-4 custom-link-layout">
+          <div class="flex justify-center flex-wrap lg:justify-start">
+            <nuxt-link to="/" class="text-white m-2">Terms & conditions</nuxt-link>
+            <nuxt-link to="/" class="text-white m-2">Privacy policy</nuxt-link>
+            <nuxt-link to="/" class="text-white m-2">Cookies policy</nuxt-link>
+          </div>
+        </div>
       </div>
-      <div class="w-full mb-4 custom-link-layout">
-        <div class="flex justify-center flex-wrap lg:justify-start">
-          <nuxt-link to="/" class="text-white m-2">Terms & conditions</nuxt-link>
-          <nuxt-link to="/" class="text-white m-2">Privacy policy</nuxt-link>
-          <nuxt-link to="/" class="text-white m-2">Cookies policy</nuxt-link>
+    </footer>
+    <div class="bg-primaryDark p-4 mb-16 md:mb-8 lg:mb-0">
+      <div class="custom-container">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+          <div class="pb-2">
+            <img class="h-12" src="~assets/svg/logo-white.svg" alt />
+          </div>
+          <div>
+            <p
+              class="text-white text-sm text-center lg:text-left"
+            >Copyright © 2020 Fairway Corner All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script>
