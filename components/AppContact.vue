@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="custom-container">
     <app-section-title class="mb-2">Contactez-nous</app-section-title>
     <p
       class="text-base mt-6 mb-2"
