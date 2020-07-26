@@ -227,7 +227,7 @@
         </div>
       </div>
     </div>
-    <div class="max-w-screen-xl mx-auto mb-8">
+    <div class="mx-auto mb-8">
       <app-contact />
     </div>
   </div>
