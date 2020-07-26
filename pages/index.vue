@@ -270,8 +270,12 @@
 }
 
 .perso {
-  max-width: 300px;
+  max-width: 200px;
   margin: 32px auto;
+
+  @media screen and (min-width: 640px) {
+    max-width: 300px;
+  }
 
   @media screen and (min-width: 1280px) {
     position: absolute;
