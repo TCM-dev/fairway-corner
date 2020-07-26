@@ -227,7 +227,7 @@
         </div>
       </div>
     </div>
-    <div class="max-w-screen-xl mx-auto mb-8">
+    <div class="mx-auto mb-8">
       <app-contact />
     </div>
   </div>
@@ -270,8 +270,12 @@
 }
 
 .perso {
-  max-width: 300px;
+  max-width: 200px;
   margin: 32px auto;
+
+  @media screen and (min-width: 640px) {
+    max-width: 300px;
+  }
 
   @media screen and (min-width: 1280px) {
     position: absolute;

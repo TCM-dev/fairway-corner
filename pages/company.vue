@@ -259,6 +259,7 @@ img {
 .second-list-of-card {
   display: grid;
   row-gap: 25px;
+  margin-top: 25px;
 }
 // .second-list-of-card {
 //   margin-top: -20px;
