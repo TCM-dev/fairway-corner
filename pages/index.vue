@@ -16,7 +16,7 @@
             src="~/assets/img/home/perso.png"
             class="perso perso-animate my-10"
           />
-          <div class="flex mt-12 items-center justify-center xl:justify-start">
+          <nuxt-link to="teaser" class="flex mt-12 items-center justify-center xl:justify-start">
             <div
               class="play bg-primary flex items-center justify-center rounded-full"
             >
@@ -25,7 +25,7 @@
             <span class="ml-6 text-primary text-4xl font-semibold"
               >Play video</span
             >
-          </div>
+          </nuxt-link>
           <div class="flex xl:block justify-center">
             <app-button class="mt-12">Request a demo</app-button>
           </div>
