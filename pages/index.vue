@@ -3,14 +3,11 @@
     <div>
       <div class="xl:h-screen xl:flex items-center hp-top">
         <div>
-          <span class="font-bold title text-center"
-            >Immersion interactive de votre avenir</span
+          <span class="font-bold title text-center xl:text-left"
+            >{{$t('immersion')}}</span
           >
           <p class="lh-27 paragraph">
-            Headquartered in Paris (France) and founded by Murielle Garnier and
-            Andrew Saxon, Fairway corner is an innovative digital learning
-            start-up company in alignment with the Health and Wellness, Natural
-            Products, Food & Beverage industry.
+            {{$t('description')}}
           </p>
           <img
             src="~/assets/img/home/perso.png"
@@ -23,11 +20,11 @@
               <img src="~/assets/svg/icons/play.svg" />
             </div>
             <span class="ml-6 text-primary text-4xl font-semibold"
-              >Play video</span
+              >{{$t('play')}}</span
             >
           </nuxt-link>
           <div class="flex xl:block justify-center">
-            <app-button class="mt-12">Request a demo</app-button>
+            <app-button class="mt-12">{{$t('request')}}</app-button>
           </div>
         </div>
       </div>
